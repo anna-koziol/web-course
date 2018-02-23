@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style-form.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Formularze</div>
+                <div class="html-chapter-content">Wzór dokumentu z rubrykami do wypełnienia. Blankiet dokumentu z nadrukowanymi rubrykami i objaśnieniami sposobu ich wypełnienia.</div>
+            
+                <div class="html-chapter-content">Do tworzenia mapy używamy znaczników:
+                    <ul> 
+                        <li><div class="code3"> &lt;form>&lt;/form></div> odpowiada za deklarację ram formularza.<br/><br/>
+                                <ul>
+                                    Główne atrybuty formularza:<br/><br/>
+                                    <li>action=" " &rarr; określa rodzaj akcji po naciśnięciu OK (aches mail, adres skryptu)</li><br/>
+                                    <li>methood="post" lub methood="get" &rarr; określa rodzaj metody, <i>post</i>i> jest bezpieczniejsze a <i>get</i> autmatycznie wybierany przez przeglądarki</li><br/>      
+                                    <li>autocomplete="on" lub methood="off" &rarr; określa zapamiętywanie przez przeglaradkę wprowadzane dane (hasła, nr kart, loginy), <i>on</i> jest domyślne</li><br/>                   <li>novalidate="novalidate" &rarr; włącza domyślne sprawdzanie zawartości</li><br/> 
+                                    <li>readonly &rarr; uniemożliwia modyfikację wartości kontrolki, tabulatorem można wejść do niej</li><br/>
+                                    <li>disabled &rarr; kontrolka jest niedostępna</li><br/>
+                                    <li>tabindex &rarr; ustala kolejność w jakiej kontrolki formularza są odwiedzane przez tabulator, musi to być liczba calkowita</li><br/> 
+                                    <li>accesskey &rarr; skróty klawiszowe</li><br/> 
+                                    <li>maxlenght &rarr; maksymalna ilość możliwych do wpisania</li><br/> 
+                                    <li>size &rarr; rozmiar, gryzie się w CSSie z szerokością <i>width</i></li><br/>
+                                    <li>action="mailto" &rarr; wysyłanie maila, otwarcie okna poczty</li><br/> 
+                                    <li>required, optional &rarr; pole, które nie są wymagane</li><br/> 
+                                </ul>
+                        </li>
+
+                    </ul> 
+                </div>
+                <div class="html-chapter">Pole input</div>
+                <div class="html-chapter-content">Jest  to  znacznik kontenerowy
+                    <ul> 
+                        <li><div class="code3"> &lt;input>&lt;/input></div> ma adrybut <i>type </i>,  który określa typ kontrolki formularza. Drugi atrybut to <i>name</i>, który określa nazwę elementu.  Dodatkowo można użyć <i>value</i>, czyli wartości tego przycisku <br/><br/>
+                        </li>
+                    </ul>
+                    
+                    <div class="code">
+    <div class="code1">&lt;input</div> <div class="code2">name</div>=<div class="code3">"nazwa"</div> <div class="code2">type</div>=<div class="code3">"button"</div><div class="code2">value</div>=<div class="code3">"zaloguj"</div><div class="code1">> &lt;/input></div>
+                    </div><br/><br>
+                    Typy inputów:
+                    <ul>
+                        <li>text  (automatyczny typ)</li>
+                        <li>password (wyświetlane są tylko kropki)</li>
+                        <li>submit (zaloguj)</li>
+                        <li>image (atrybuty: type, name, src, alt)</li>
+                        <li>reset</li>
+                    </ul>
+                </div>
+                
+                <div class="html-chapter">Przekazywanie plików</div>
+                <div class="html-chapter-content">Kontrolka wyboru pliku
+                    <div class="code"> <div class="code1">&lt;input</div> <div class="code2">type</div>=<div class="code3">"file"</div><div class="code1">> &lt;/input></div>
+</div><br/><br>
+                    Przekazywanie plików przez formularz, posiada atrybuty <i>type</i>  oraz <i>name</i>. Formularz musi być przekazany metodą <i>post</i>. Należy ustawić sposób kodowania danych pochądzących z formularza: <br/>
+                     <br/>               <div class="code"> <div class="code1">&lt;input</div> <div class="code2">name</div>=<div class="code3">"nazwa"</div> <div class="code2">type</div>=<div class="code3">"file"</div><div class="code2">enctype</div>=<div class="code3">"multipart/form-data"</div><div class="code1">> &lt;/input></div></div> 
+                    </div><br/><br>
+                
+                <div class="html-chapter">Label</div>
+                <div class="html-chapter-content">Spina elemnty,  oznaczeine tekstu, będącego opisem pola formularza, elemnt liniowy
+                    <br/><br/><div class="code">
+                        <div class="code1">&lt;label> &lt;/label></div>
+                    </div></div><br/><br/>
+                    
+                             
+                <div class="html-chapter">Tworzenie listy</div>
+                <div class="html-chapter-content">Za tworzenie listy odpowiedzialny jest:
+                   <ul>
+                       <li>select (ramy)</li>
+                       <li>option (opcje)</li>
+                   </ul>
+                    <br/><br/><div class="code">
+                    <div class="code1">&lt;select</div> <div class="code2">name</div>=<div class="code3">"Dzień"</div><div class="code1">  ></div> 
+                        <div class="code1">&lt;option></div>Poniedziałek <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>Wtorek <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>Środa <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>Czwartek <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>Piątek <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>Sobota <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>NIedziela <div class="code1">&lt;/option></div>
+                    <div class="code1">&lt;/select></div>
+                    </div><br/><br/>
+                        <ul>
+                            <li>size (liczba elementów widzialnych)</li>
+                            <li>multiple (możliwość wyboru kilku elementów)</li>
+                        </ul>
+                    </div><br/><br/>
+                    
+                <div class="html-chapter">Optgroup</div>
+                <div class="html-chapter-content">Odpowiedzialne za tworzenie podgrup:
+                    <br/><br/><div class="code">
+                    <div class="code1">&lt;optgroup</div> <div class="code2">label</div>=<div class="code3">"Samochód"</div><div class="code1">  ></div> 
+                        <div class="code1">&lt;option></div>Opcje 1 <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>Opcje 2 <div class="code1">&lt;/option></div>
+                        <div class="code1">&lt;option></div>Opcje 3 <div class="code1">&lt;/option></div>
+                    <div class="code1">&lt;/optgroup></div>
+                    </div><br/><br/>
+                       Grupowanie i podpisywanie kontrolek formularza:
+                        <ul>
+                            <li>label</li>
+                            <li>fieldset (obramowanie)</li>
+                            <li>legend (napis na obramowaniu)</li>
+                        </ul>
+                        
+                        <br/><br/><div class="code">
+                    <div class="code1">&lt;fieldset>
+                        &lt;legend></div> 
+                            opis
+                                <div class="code1">&lt;label>
+                                    &lt;input></div>
+                    </div><br/><br/>
+                    
+                    </div><br/><br/>
+                    
+                    
+                <div class="html-chapter">Rozbudowane pole tekstowe</div>
+                <div class="html-chapter-content">Służy do tego znacznik <i>textarea</i> <br/><br/>
+                    <div class="code"> <div class="code1">&lt;textarea</div> <div class="code2">rows</div>=<div class="code3">"1"</div><div class="code2">cols</div>= <div class="code3">"5"</div><div class= "code1">></div> tekst<div class="code1"> &lt;/textarea></div>
+</div><br/><br>
+ 
+                    </div><br/><br>
+                    
+                <div class="html-chapter">Znak wodny</div>
+                <div class="html-chapter-content">Znak wodny <i>placeholder</i> to automatyczny napis w bloku formularza</div>
+                                     
+                <div class="html-chapter">Połączenie listy z polem tekstowym</div>
+                <div class="html-chapter-content">
+                    <br/><br/><div class="code">
+                    <div class="code1">&lt;datalist</div> <div class="code2">id</div>=<div class="code3">"Połączenie"</div><div class="code1">  ></div>
+                        <div class="code1">&lt;option</div> <div class="code2">label</div>=<div class="code3">"1"</div>
+                        <div class="code2">value</div>=<div class="code3">"1"</div><div class="code1">  ></div>
+                        <div class="code1">&lt;option</div> <div class="code2">label</div>=<div class="code3">"5"</div>
+                        <div class="code2">value</div>=<div class="code3">"5"</div><div class="code1">  ></div> 
+                    <div class="code1">&lt;/datalist></div>
+                    
+                    <div class="code1">&lt;input</div> <div class="code2">list</div>=<div class="code3">"Połączenie"</div><div class="code2">name</div>=<div class="code3">"Połączenie"</div><div class="code1">  ></div>
+                    </div><br/><br/>
+                    
+                </div>
+                                     
+                <div class="html-chapter">Czas na przykład - własny formularz</div>
+                <div class="html-chapter-content">
+                <div id="form">
+        <input type="button" onclick="alert('Jesteś pewny czy wyjść z strony rejestracyjnej?')" value="Wyjdź">
+		
+		<input type="image" name="obraz" src="home.png" alt="strona główna" height="40px;"> <br/><br/>
+		
+		<h4>FORUM PRZEDSIĘBIORCÓW - REJESTRACJA</h4>
+		
+		<form>
+
+			
+			<input type="text" placeholder="imie" onfocus="this.placeholder=' '" onblur="this.placeholder='imie'">
+			
+			<input type="text" placeholder="nazwisko" onfocus="this.placeholder=' '" onblur="this.placeholder='nazwisko'">
+			<br/>
+			<label>
+				Data urodzin:<input type="date"  name="data urodzin" />
+			</label>
+			<br/>
+			<input type="text" placeholder="login" onfocus="this.placeholder=' '" onblur="this.placeholder='login'">
+			
+			<input type="password" placeholder="hasło" onfocus="this.placeholder=' '" onblur="this.placeholder='hasło' ">
+			
+			<input type="password" placeholder="powtórz hasło" onfocus="this.placeholder=' '" onblur="this.placeholder='powtórz hasło' ">
+			
+			
+			<input type="email" placeholder="mail" onfocus="this.placeholder=' '" onblur="this.placeholder='mail'">
+			
+			<br/><br/><hr />
+			
+			<label><br/>
+			Wybierz płeć:
+			  <input type="radio" name="gender" value="kobieta" checked> Kobieta
+			  <input type="radio" name="gender" value="mężczyzna"> Mężczyzna
+			  <input type="radio" name="gender" value="inne"> Inne
+			 </label><br/>
+
+			<label>
+				Numer telefonu:<input type="text" placeholder="numer telefonu" onfocus="this.placeholder=' '" onblur="this.placeholder='numer telefonu'">
+			</label><br/>			 
+			
+			Kraj:
+			<select name="kraj">
+				<option>Polska</option>
+				<option>Niemcy</option>
+				<option>Wielka Brytania</option>
+				<option>USA</option>
+				<option>Ukraina</option>
+				<option>Inne</option>
+			</select><br/>
+			
+			
+			Miasto zamieszkania:
+			<select name="miasto">
+				<option>Warszawa</option>
+				<option>Kraków</option>
+				<option>Łódź</option>
+				<option>Poznań</option>
+				<option>Inne</option>
+			</select><br/><br/>
+			
+			<label>
+				Wybierz zdjęcie profilowe: <input type="file" name="pic" accept="image/*">
+			</label><br/><br/><hr />
+			
+			<label><br/>
+				Aktualnie jestem: 
+				<input type="checkbox" name="uczen" value="Uczeń">Uczeń
+				<input type="checkbox" name="uczen" value="Student">Student
+				<input type="checkbox" name="pracuje" value="Pracuje">Pracuje
+				<input type="checkbox" name="pracuje" value="Po skońcoznej szkole, ale bez pracy"> Po skońcoznej szkole, ale bez pracy
+			</label><br/><br/>
+			
+			Ilość poprzednich stanowsik,  na którym pracowałem/-am: <input type="number" name="quantity" min="0" max="15"> <br/><br/>
+			
+			Dział pracy (o ile pracuję*):
+			<select name="dział">
+				<option>Rolnictwo, leśnictwo, rybołówstwo</option>
+				<option>Przemysł wydobywczy, górnictwo i przetwórczy oraz budownictwo</option>
+				<option>Transport, łączność, gospodarkę komunalną i mieszkaniową oraz handel</option>
+				<option>Finanse, ubezpieczenia, marketing i reklamę oraz obrót nieruchomościami</option>
+				<option>Publiczne instytucje, turystyka i rekreacja</option>
+			</select><br/><br/>
+			 Nie wiesz? Sprawdź w google:
+			<input type="search" name="googlesearch"><br/><br/>
+			
+			Moja firma to:
+			<select name="firma">
+				<option>Startup</option>
+				<option>Spółka</option>
+				<option>Korporacja</option>
+				<option>Inne</option>
+			</select><br/><br/>
+			
+			Miesiąc w którym mogę najwięcej inwestować:
+			<input type="month" name="month"><br/><br/>
+			
+			  Dodaj swoją stronę internetową firmy:
+			  <input type="url" name="homepage"><br/><br/> <hr />
+			
+			<label><br/>
+				Umiem języki takie jak: 
+				<input type="checkbox" name="angielski" value="angielski">angielski
+				<input type="checkbox" name="francuski" value="francuski">francuski
+				<input type="checkbox" name="niemiecki" value="niemiecki">niemiecki
+				<input type="checkbox" name="włoski" value="włoski"> włoski
+				<input type="checkbox" name="hiszpański" value="hiszpański"> hiszpański
+			</label><br/><br/>
+			
+			<label>
+				Ulubiony kolor:<input type="color" name="kolor">
+			</label><br/>
+			
+			Ilość udziałów do zaoferowania(0-10):<input type="range" name="Ilość udziałów do zaoferowania" min="0" max="10"><br/>
+			
+			<input type="text" placeholder="opis" onfocus="this.placeholder=' '" onblur="this.placeholder='Opis o sobie'"><br/><br/>
+			
+			<input type="checkbox" name="regulamin" value="regulamin">Zgadzam się z regulaminem strony <br/>
+			
+			<input type="checkbox" name="pamietaj" value="pamietaj">Pamiętaj mnie na tej witrynie <br/>
+
+			<input type="submit"value="Zaloguj się">
+			<input type="reset">
+		</form></div>
+                    
+                    
+                </div>
+
+                                      
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

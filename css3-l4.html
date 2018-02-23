@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Podstawowy układ strony</div>
+                <div class="html-chapter-content">Zazwyczaj większość najprostszych stron składa się z nagłówka, stopki i dwóch kolumn. Jednak bloki <i>div</i> domyślnie ustawiają się jeden pod drugim, gdyż są elementami blokowymi. <br>
+                Więc jak zbudować taką stronę jak na rysunku? Gdzie ma dwie kolumny obok siebie....  <br> <br>
+                
+                <img src="sekcje-strony-internetowej-klocki-moduly-czesci-kurs-html.png" alt="float"><br> <br>
+                
+                    Jest to bardzo łatwe, słuzy do tego <div class="code3">float</div>
+                
+                </div>
+                
+
+                
+                <div class="html-chapter">Wystarczy dodać dwie właściwości w CSS</div>
+                <div class="html-chapter-content">
+                       <br/><br/>
+<div class="code"> <div class="code1">#aside</div> {
+        <div class="code4">float</div>: <div class="code3">left</div>;
+         <div class="code4">width</div>: <div class="code3">200px</div>;
+    }
+     
+    <div class="code1">#content</div> {
+        <div class="code4">float</div>: <div class="code3">left</div>;
+         <div class="code4">width</div>: <div class="code3">700px</div>;
+    }   
+</div>
+                <br/><br/>
+                   Dzięki <i>left</i> bloki zaczęły się ustawiać od lewej strony krawędzi strony. Należy ustalić dowolną szerokość bloków, aby ustawiły się poprawnie  <br><br><br>
+    <div class="code1">Float przyjmuje właściwości:</div>
+    <ul>
+        <li>none</li>
+        <li>left</li>
+        <li>right</li>
+        <li>initial</li>
+        <li>inherit</li>
+    </ul>
+                <br/><br/>
+
+            </div>
+                
+                <div class="html-chapter">Co ze stopką?</div>
+                <div class="html-chapter-content">
+                   Aby stopka ułożyła się w osobnym  wierszu, pod dwoma kolumnami, nalezy wyczyścić formatowanie:
+ <br/><br/>
+<div class="code"> <div class="code1">footer</div> {
+        <div class="code4">clear</div>: <div class="code3">both</div>;
+    }
+</div>
+                <br/><br/>
+                    
+                </div>
+
+            </div>
+            
+            <div class="come-back"><a href="css3.html"><img src="back.png" alt="back" />Powróć do menu głównego CSS</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

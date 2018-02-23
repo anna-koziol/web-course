@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Arkusz stylów CSS</div>
+                <div class="html-chapter-content">Wszystkie arkusze stylów zawierają jedną rzecz &rarr; reguły</div>
+                
+
+                
+                <div class="html-chapter">Anatomia reguł:</div>
+                <div class="html-chapter-content">
+                       
+                    Menu poziome<br/><br/>
+<div class="code"> <div class="code1">reguła:</div> {
+        <div class="code4">właściwość</div>: <div class="code3">wartość</div>;
+    }
+    
+    
+    np.:
+    
+    <div class="code1">p</div> {
+        <div class="code4">color</div>: <div class="code3">orangered</div>;
+    }
+</div>
+                <br/><br/><br/><br/>
+          
+                <div class="html-chapter-content">
+                <div class="html-chapter-content">Efekt: </div>
+                    <div id="p-color">
+                        <p>Działający arkusz stylów</p>
+                    </div>
+                </div><br/><br/>
+
+            </div>
+                
+                               <div class="html-chapter">Typy stylów:</div>
+                <div class="html-chapter-content">
+                    <ul>
+                        <li>Zewnętrzny &rarr; osobny plik, w  html dołączony  arkusz:<br/><br/>
+                            <div class="code"> <div class="code1">&lt;link </div><div class="code2">rel</div>=<div class="code3">stylesheet</div><div class="code2">href</div>=<div class="code3">"arkusz.css"</div><div class="code1"> /> </div> </div>
+                        </li><br/><br/>
+                        <li>Wewnętrzny &rarr; umieszczony w nagłówku strony<br/><br/>
+                            <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        <div class="code4">color</div>: <div class="code3">pink</div>;
+        <div class="code4">font-size</div>: <div class="code2">40px</div>;
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                        </li><br/><br/>
+                        <li>Lokalny &rarr; umieszczany wewnątrz tekstu<br/><br/>
+  <div class="code"> <div class="code1">&lt;p> </div><div class="code2">style</div>=<div class="code3">"color: blue; bacground-color: grey; font-weight: bold;"</div><div class="code1">></div>tekst<div class="code1"> &lt;/p> </div> </div>
+                        
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+            
+            <div class="come-back"><a href="css3.html"><img src="back.png" alt="back" />Powróć do menu głównego CSS</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+               
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

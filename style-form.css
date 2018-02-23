@@ -1,0 +1,279 @@
+#form {
+    margin: 0 auto;
+}
+
+h4 {
+	text-align: center;
+	color: #4d524c;
+	font-size: 30px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-indent: 50px;
+	letter-spacing: 5px;
+	line-height: 1.8;
+	text-shadow: 1px 1px black;
+}
+
+input[type=date] {
+  width: 170px;
+  background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+}
+
+input[type=button] {
+  width: 250px;
+  background-color:#244c98;
+  font-size: 20px;
+  padding: 7px 5px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+input[type=reset] {
+  width: 150px;
+  background-color:#244c98;
+  font-size: 20px;
+  padding: 15px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px; 
+}
+
+input[type=month] {
+  width: 170px;
+  background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  font-size: 10px;
+  padding: 7px 5px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px; 
+}
+
+input[type=url] {
+  width: 170px;
+  background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  font-size: 10px;
+  padding: 7px 5px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px; 
+}
+
+input[type=email] {
+  width: 600px;
+    background-color:#aaebaf;
+  border: 2px solid #2E2E2E;
+  font-size: 20px;
+  padding: 15px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+select[name=kraj] {
+  width: 100px;
+    background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  font-size: 16px;
+  padding: 7px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+select[name=firma] {
+  width: 100px;
+    background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  font-size: 16px;
+  padding: 7px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+select[name=miasto] {
+  width: 100px;
+    background-color:#39b442;;
+  border: 2px solid #2E2E2E;
+  font-size: 16px;
+  padding: 7px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+select[name=dział] {
+  width: 130px;
+    background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  font-size: 16px;
+  padding: 7px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+input[type=search] {
+  width: 130px;
+    background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  font-size: 16px;
+  padding: 7px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+input[type=number] {
+  width: 50px;
+  background-color:#39b442;
+  border: 2px solid #2E2E2E;
+  font-size: 16px;
+  padding: 7px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+input[type=text],
+input[type=password] {
+  width: 600px;
+background-color:#baffbf;
+  border: 2px solid #2E2E2E;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  width: 300px;
+  background-color:#244c98;
+  color: #142323;
+  font-size: 20px;
+  padding: 15px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  margin-top: 20px;
+}
+
+
+input[type=submit]:hover {
+  background-color:#2a5cbc;
+}
+
+input[type=image] {
+  margin-left: 820px;
+    margin-top: -90px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus, input[type=email]:focus,  input[type=search]:focus, input[type=url]:focus {
+  -webkit-box-shadow: 0px 0px 30px -5px rgba(84,80,84,0.81);
+  -moz-box-shadow: 0px 0px 30px -5px rgba(84,80,84,0.81);
+  box-shadow: 0px 0px 30px -5px rgba(84,80,84,0.81);
+  border: 2px solid #39b442;
+  background-color: #f0e2e7;
+  color: #C91856;
+}
+
+input[type=submit]:focus {
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(84,80,84,0.81);
+  -moz-box-shadow: 0px 0px 15px -5px rgba(84,80,84,0.81);
+  box-shadow: 0px 0px 15px -5px rgba(84,80,84,0.81);
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #12841a;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #12841a;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #12841a;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #12841a;
+}

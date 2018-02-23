@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">MP3?</div>
+                <div class="html-chapter-content">Format kompresji stratnej wykorzystujący niedokonałości ucha ludzkiego</div>
+                
+                <div class="html-chapter">OGG</div>
+                <div class="html-chapter-content">Format - alternatywa do MP3</div>
+            
+               <div class="html-chapter">Umieszczanie  multimediów na stronie</div>
+                <div class="html-chapter-content">Znacznik <i>audio</i> do umieszczenia plików muzycznych, natomiast <i>control</i> włącza dostępność przycisków do odtwarzania i przewijania.  <br> <br> 
+                    <div class="code"><div class="code1">               
+                        &lt;audio controls>
+                                &lt;source</div> <div class="code2">type</div>=<div class="code3">" "</div><div class="code1"> /></div>
+                        <div class="code1">&lt;/audio></div>                 
+                    </div> <br/><br/>
+                    Atrybuty: <ul>
+                        <li>autoplay</li>
+                        <li>preload</li>
+                        <li>loop</li>
+                    </ul> <br><br>
+                    
+                    Znacznik <i>video</i> do umieszczenia plików wideo, natomiast <i>control</i> włącza dostępność przycisków do odtwarzania i przewijania.  <br> <br> 
+                    <div class="code"><div class="code1">               
+                        &lt;video controls>
+                                &lt;source</div> <div class="code2">type</div>=<div class="code3">" "</div><div class="code1"> /></div>
+                        <div class="code1">&lt;/video></div>                 
+                    </div> <br/><br/>
+            </div>
+            
+                <div class="html-chapter">Iframe</div>
+                <div class="html-chapter-content">Osadzenie zewnętrznych dokumntów</div>
+                
+                <div class="html-chapter">Poster</div>
+                <div class="html-chapter-content">Obraz początkowy w filmiku</div>
+                
+                <div class="html-chapter">Przykład</div>
+                <div class="html-chapter-content">
+                    Nirvana - Lithium:
+                    <audio controls >
+                        <source type="audio/mp3" src="Nirvana%20-%20Lithium.mp3" />
+                    </audio> <br />  <br /> <br /> 
+
+                    Łączenie światłowodów:
+                    <video controls >
+                        <source type="video/mp4" src="%C5%81%C4%85czenie%20%C5%9Bwiat%C5%82owod%C3%B3w.mp4" />
+                    </video>   
+                    
+                              <br> <br><br> <br> KOD <br> <br>
+                    <div class="code">Nirvana - Lithium:<div class="code1">               
+    &lt;audio controls>
+        &lt;source</div> <div class="code2">type</div>=<div class="code3">"audio/mp3"</div><div class="code2"> src</div>=<div class="code3">"Nirvana%20-%20Lithium.mp3"</div><div class="code1"> /></div>
+    <div class="code1">&lt;/audio></div> 
+                        
+Łączenie światłowodów:<div class="code1">               
+    &lt;video controls>
+        &lt;source</div> <div class="code2">type</div>=<div class="code3">"video/mp4"</div><div class="code2"> 
+        src</div>=<div class="code3">"N%C5%81%C4%85czenie%20%C5%9Bwiat
+        %C5%82owod%C3%B3w.mp4"</div><div class="code1"> /></div>
+    <div class="code1">&lt;/video></div>                  
+                    </div> <br/><br/>         
+                </div>
+            
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

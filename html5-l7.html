@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Menu rozwijane</div>
+                <div class="html-chapter-content">Tworzymy je  z zagnieżdżonej, nieuporządkowanej listy odsyłaczy. Proces twprzenia go jest bardzo podobny do  tworzenia zwykłego menu. Różnica jest taka, że elemnty wysuwane to zagnieżdżona lista, która wyświetla się po najechaniu na elemnt nadrzędny - będzie służyć do tego pseudoklasa <div class="code4">:hover</div></div>
+                
+
+                
+                <div class="html-chapter">Kroki by otrzymać menu rozwijane</div>
+                <div class="html-chapter-content">
+                <ol>
+                    <li>Nieuporządkowana lista odsyłaczy<br/><br/>
+<div class="code"> <div class="code1">&lt;ul> 
+                &lt;li></div>Opcja 1<div class="code1">&lt;/li>
+                &lt;li></div>Opcja 2<div class="code1">&lt;/li>
+                &lt;li></div>Opcja 3<div class="code1">&lt;/li>
+&lt;/ul></div>   </div><br/>
+                    </li>
+                    
+                    <li>Menu poziome<br/><br/>
+<div class="code"> <div class="code1">a</div> {
+        <div class="code4">display</div>: <div class="code3">inline-block</div>;
+    }
+    
+    <div class="code1">li</div> {
+        <div class="code4">display</div>: <div class="code3">inline</div>;
+    }
+</div><br/>
+                    </li>
+                    
+                    <li>Formatowanie w CSSie<br/><br/>
+  <div class="code"> <div class="code1">a</div> {
+        <i>format kolorów, marginesów, ramek, podkreśleń, czcionek itd.</i>
+    }
+    
+    <div class="code1">li</div> {
+        <div class="code4">display</div>: <div class="code3">inline</div>;
+    }
+      
+      <div class="code1">ul</div> {
+        <div class="code4">list-style-type</div>: <div class="code3">none</div>;
+        <div class="code4">margin</div>: <div class="code2">10px</div>;
+        <div class="code4">padding</div>: <div class="code2">5px</div>;
+    }
+</div><br/>                  
+                    </li>
+                    
+                    <li>Pozycjonowanie<br/><br/>
+<div class="code"> <div class="code1">ul</div> {
+        <div class="code4">position</div>: <div class="code3">relative</div>;
+    }
+    
+    <div class="code1">ul ul</div> {
+        <div class="code4">position</div>: <div class="code3">absolute</div>;
+        <div class="code4">top</div>: <div class="code2">100%</div>;
+    }
+</div><br/>
+                    </li>
+                    
+                    <li>Ustawienie odpowiedniego display na elementach menu zagnieżdzonego<br/><br/>
+<div class="code"> <div class="code1">ul  ul</div> {
+        <div class="code4">display</div>: <div class="code3">none</div>;
+    }
+    
+    <div class="code1">ul ul a</div> {
+        <div class="code4">display</div>: <div class="code3">none</div>; 
+        //ukrycie menu podrzędnego
+        <i>stylizacja</i>
+    }
+</div><br/>                    
+                    </li>
+                    
+                    <li>Menu podrzędne ma się pokazywać po najechaniu myszy na nadrzędny - wykorzystaujemy pseudoklasę <div class="code4">:hover</div> <br/><br/>
+    <div class="code"> <div class="code1">ul li</div>:hover > <div class="code1">ul</div> {
+        <div class="code4">display</div>: <div class="code3">block</div>;
+        //teraz po najechaniu myszy menu pokaże się
+    }
+</div><br/>
+                    
+                    </li>
+                </ol>    
+                <br/><br/><br/><br/>
+          
+                <div class="html-chapter-content">Przykładowe menu poziome - rozwijane: 
+                    <div id="menu-rozw-poz">
+                    			<ul>
+                                    <li><a href="#">Strona 1</a>
+                                        <ul>
+                                            <li><a href="#">Opcja1</a></li>
+                                            <li><a href="#">Opcja2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Strona 3</a></li>
+                                    <li><a href="#">Strona 3</a></li>
+                                    <li><a href="#">Strona 4</a></li>
+                                </ul>
+                    </div>
+                </div><br/><br/><br/><br/>
+                    
+                    
+                <div class="html-chapter-content">Przykładowe menu pionowe - rozwijane: <br/><br/>
+                    <div id="menu-rozw-pio">
+                    <ul>
+                        <li><a href="#">Strona główna</a>
+                            <ul>
+                                <li><a href="#">Opcja1</a></li>
+                                <li><a href="#">Opcja2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Strona 2</a>
+                            <ul style="left:120px">
+                                <li><a href="#">Opcja3</a></li>
+                                <li><a href="#">Opcja4</a></li>
+                            </ul>	
+                        </li>
+                        <li><a href="#">Strona 3</a></li>
+                        <li><a href="#">Strona 4</a></li>
+                    </ul>
+                    </div>                
+                </div><br/><br/>
+            </div>
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

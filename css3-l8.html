@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Animacje</div>
+                <div class="html-chapter-content">Do tworzenia animacji służy właściwość <i>transform</i>.
+                <br><br>
+                Aby były odpowiednio interpretowane przez przeglądarkę poleca sie użyć przedrostków: 
+                <ul>
+                    <li>-webkit (chrome, safari)</li>
+                    <li>-o (opera)</li>
+                    <li>-moz (mozilla)</li>
+                    <li>-ms (edge)</li>
+                </ul>             
+                </div>
+                
+
+                
+                <div class="html-chapter">Przykładowe animacje</div>
+                <div class="html-chapter-content">
+                       <br/><br/>
+<div class="code"> <div class="code1">#div</div> {
+    <div class="code4">transform</div>: <div class="code3">rotate</div> (<div class="code2">90deg</div>);
+    <div class="code4">transform</div>: <div class="code3">scale</div> (<div class="code2">2</div>);
+    <div class="code4">transform</div>: <div class="code3">scale</div> (<div class="code2">0.2</div>);
+    }
+</div><br> <br>
+               <div class="code3">Rotate</div> służy do obracania elementu, jako atrybut podaje się ilość stopni, pod jakim ma się obrócić. <br>
+               <div class="code3">Scale</div> służy do zmieniania wielkości elementu, jako atrybut podaje się liczbę, razy ile ma  się powiększyć, czyli 
+               <ul>
+                   <li>0-1 &rarr; pomniejszenie</li>
+                   <li>1-x &rarr; powiększenie</li>
+               </ul> 
+                <br/><br/>
+                Można dowolnie łączyć ze sobą właściwości:
+                                       <br/><br/>
+<div class="code"> <div class="code1">#div</div> {
+    <div class="code4">transform</div>: <div class="code3">rotate</div> (<div class="code2">90deg</div>) <div class="code3">scale</div> (<div class="code2">2</div>);
+    }
+</div><br> <br>
+               
+                              <br/><br/>
+                Lustarzane odbicie:
+                                       <br/><br/>
+<div class="code"> <div class="code1">#div</div> {
+    <div class="code4">transform</div>: <div class="code3">scale</div> (<div class="code2">-1,1</div>);
+    }
+</div><br> <br>
+            </div>
+            
+                            <div class="html-chapter">Animacje krok po kroku</div>
+                <div class="html-chapter-content">
+                <ol>
+                    <li>Definicja animacji</li>
+                    <li>Zastosujemy animację do elemnetu
+                        <br/><br/>
+<div class="code"> <div class="code1">@keyframes'nazwa'</div> {
+    <div class="code2">form</div>: {<div class="code3">left</div>: <div class="code2">120%</div>};
+    <div class="code2">to</div> {<div class="code3">left</div>: <div class="code2">0%</div> };
+    }
+</div><br> <br>
+                    </li>
+                    <li>Przypisujemy aniamcję do elemntu - podajemy nazwe animacji i czas w jakim ma trwać
+                                                           <br/><br/>
+<div class="code"> <div class="code1">#div</div> {
+    <div class="code4">animation</div>: <div class="code3">nazwa</div> <div class="code2">3s</div>;
+    }
+</div><br> <br>
+                    </li>
+                </ol>             
+                </div>
+                
+                <div class="html-chapter">Budowa właściwości animacja</div>
+                <div class="html-chapter-content">
+                    <br/><br/>
+<div class="code"> <div class="code2">aniamtion</div>: <div class="code3">nazwa 
+czas_trwamia 
+rozkład_czasowy
+opóźnienie
+liczba_powtórzeń
+kierunek</div>
+</div><br> <br>
+                </div>
+                
+                
+                <div class="html-chapter">Co znaczą te właściwości?</div>
+                <div class="html-chapter-content">
+                    animation-duration &rarr; czas trwania animacji <br>
+                    animation-name &rarr; nazwa animacji <br>
+                    animation-iteration-count &rarr;  liczba powtórzeń (infinite = nieskończoność) <br>
+                    animation-direction: alternate (aniamcja będzie szła po elemntach w kolejności 1,2,3&rarr;3,2,1)  <br>
+                    animation-delay &rarr;  opóźnienie <br>
+                    animation-timing-function &rarr; tempo (linear = wciąż takie same, easy-in = wolne przyjście, easy-out = wolne odejści)      
+                </div>
+                
+                <div class="html-chapter">Przesunięcie</div>
+                <div class="html-chapter-content">
+                    <br/><br/>
+<div class="code"> <div class="code4">transform-translate</div>: (<div class="code3">ilość px w poziomie, ilość px w pionie</div>)
+</div><br> <br>    
+                </div>
+                
+                                <div class="html-chapter">Przekrzywienie</div>
+                <div class="html-chapter-content">
+                    <br/><br/>
+<div class="code"> <div class="code4">transform-skew</div>: (<div class="code3">ilość stopni OX, ilość stopni OY</div>)
+</div><br> <br>    
+                </div>
+
+            </div>
+            
+            <div class="come-back"><a href="css3.html"><img src="back.png" alt="back" />Powróć do menu głównego CSS</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

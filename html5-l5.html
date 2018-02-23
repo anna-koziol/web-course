@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="blink">UWAGA! WYMGANA UMIEJĘTNOŚĆ CSS<br/>Przed rozpoczęciem tej lekcji, zrób lekcje CCS</div>
+                <div class="come-back"><a href="css3.html"><img src="back.png" alt="back" />Zacznij naukę CSS</a><img src="back2.png" alt="back" /></div>
+                <div class="html-chapter">Menu</div>
+                <div class="html-chapter-content">Aby strona była czytelniejsza, do nawigacji używa się menu. Mogą być poziome, czyli kolejne opcje obok siebie lub pionowe, czyli kolejne opcje pod sobą. Jest to  uporządkowana lista odsyłaczy.</div>
+                
+                <div class="html-chapter">Menu poziome - I sposób</div>
+                <div class="html-chapter-content">Zaczynamy od stworzenia listy odsyłaczy do naszych podstron, czyli zagnieżdżamy <div class="code3">&lt;a> &lt;/a></div> w<div class="code3"> &lt;li> &lt;/li></div>. <br/><br/>Znacznik <div class="code3"> &lt;nav> &lt;/nav></div> to rodzaj diva, służy do menu nawigacyjnego.</div><br/><br/><br/>
+                <div class="code">KOD HTML:<div class="code1">
+                    
+                        &lt;nav>
+                            &lt;ul>
+                                &lt;li>&lt;a</div> <div class="code2">href</div>=<div class="code3">"index.html"</div><div class="code1"> ></div>Strona główna<div class="code1">&lt;/a>&lt;/li>
+                                &lt;li>&lt;a</div> <div class="code2">href</div>=<div class="code3">"html5.html"</div><div class="code1"> ></div>HTML5<div class="code1">&lt;/a>&lt;/li>
+                                &lt;li>&lt;a</div> <div class="code2">href</div>=<div class="code3">"#"</div><div class="code1"> ></div>CSS3<div class="code1">&lt;/a>&lt;/li>
+                                &lt;li>&lt;a</div> <div class="code2">href</div>=<div class="code3">"slowniczek.html"</div><div class="code1"> ></div>Słowniczek<div class="code1">&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/nav></div>                 
+                    </div> <br/><br/><br/><br/>
+                <div class="html-chapter-content">Teraz czas na stylizację i formatowanie w CSSie...</div><br/><br/><br/>
+                
+                    <div class="code">KOD CCS:
+                        
+
+<div class="code1">nav li a</div> {
+    <div class="code4">display</div>: <div class="code3">inline</div>;
+}
+                        
+<div class="code1">nav a</div> {
+    <div class="code4">background-color</div>: <div class="code1">orange</div>;
+    <div class="code4">color</div>: <div class="code1">black</div>;
+    <div class="code4">font-size</div>: <div class="code2">15px</div>;
+    <div class="code4">text-align</div>: <div class="code3">center</div>;
+    <div class="code4">text-decoration</div>: <div class="code3">none</div>;
+    <div class="code4">margin-left</div>: <div class="code2">0px</div>;
+    <div class="code4">margin-right</div>: <div class="code2">5px</div>;
+    <div class="code4">letter-spacing</div>: <div class="code2">3px</div>;
+    <div class="code4">font-weight</div>: <div class="code3">bolder</div>;
+    <div class="code4">border-radius</div>: <div class="code2">5px 5px 5px 5px</div>;
+    <div class="code4">padding</div>: <div class="code2">5px 15px 5px 15px</div>;
+    <div class="code4">display</div>: <div class="code3">inline-block</div>;
+    <div class="code4">opacity</div>: <div class="code2">0.5</div>;
+    <div class="code4">border</div>: <div class="code2">1px</div> <div class="code3">solid #666666</div>;
+    <div class="code4">width</div>: <div class="code2">210px</div>;
+}             
+                
+<div class="code1">nav ul</div> {
+    <div class="code4">list-style-type</div>: <div class="code3">none</div>;
+    <div class="code4">margin</div>:  <div class="code2">0</div> <div class="code3">auto</div>;                      
+}               </div>
+                
+                <div class="html-chapter-content"><br/><br/>Efekt: <br /><br/>
+                    <div class="menu-chapter-content">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Strona główna</a></li>
+                                <li><a href="html5.html">HTML5</a></li>
+                                <li><a href="#">CSS3</a></li>
+                                <li><a href="slowniczek.html">Słowniczek</a></li>
+                            </ul>
+                        </nav></div>
+                </div>
+
+                
+                <div class="html-chapter">Menu poziome - II sposób</div>
+                <div class="html-chapter-content">Isteniej też inny, nieco trudniejszy sposób na wykonanie menu poziomego
+                <br/><br /><br/>
+                Kroki:
+                    <ol>
+                        <li>Przekształć elementy listy w elemnty pływające nav ul {float: left}</li>
+                        <li>Dodaj do odnośników właściwość nav a  {display: block}</li>
+                        <li>Zdefiniuj styl odnośników: tło, ramki</li>
+                        <li>Ustaw szerokość</li>
+                    </ol>
+                    <br/><br/>         
+ 
+            </div>
+                
+            <div class="html-chapter">Menu pionowe</div>
+                <div class="html-chapter-content">Tworzy się je w HTMLu dokładnie tak samo jak przy poziomym, czyli zaczynamy od stworzenia listy odsyłaczy do naszych podstron, czyli zagnieżdżamy <div class="code3">&lt;a> &lt;/a></div> w<div class="code3"> &lt;li> &lt;/li></div></div><br/><br/><br/>
+                <div class="code">KOD HTML:<div class="code1">
+                    
+                        &lt;nav>
+                            &lt;ul>
+                                &lt;li>&lt;a</div> <div class="code2">href</div>=<div class="code3">"index.html"</div><div class="code1"> ></div>Strona główna<div class="code1">&lt;/a>&lt;/li>
+                                &lt;li>&lt;a</div> <div class="code2">href</div>=<div class="code3">"html5.html"</div><div class="code1"> ></div>HTML5<div class="code1">&lt;/a>&lt;/li>
+                                &lt;li>&lt;a</div> <div class="code2">href</div>=<div class="code3">"slowniczek.html"</div><div class="code1"> ></div>Słowniczek<div class="code1">&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/nav></div>                 
+                    </div> <br/><br/><br/><br/>
+                <div class="html-chapter-content">Teraz czas na stylizację i formatowanie w CSSie...</div><br/><br/><br/>
+                
+                <div class="code">
+KOD CSS:
+                    
+<div class="code1">nav ul li</div>  {
+    <div class="code4">list-style</div>: <div class="code3">none</div>;
+    <div class="code4">margin</div>: <div class="code2">8px</div>;
+    <div class="code4">display</div>: <div class="code3">inline</div>;
+}
+
+<div class="code1">nav ul</div> {
+    <div class="code4">padding</div>: <div class="code2">0px</div>;
+    <div class="code4">margin</div>: <div class="code2">0px</div>;
+    <div class="code4">text-align</div>: <div class="code3">center</div>;
+}
+
+<div class="code1">nav a</div> {
+    <div class="code4">text-decoration</div>: <div class="code3">none</div>;
+    <div class="code4">color</div>: <div class="code1">black</div>;
+    <div class="code4">display</div>: <div class="code3">block</div>;
+    <div class="code4">border</div>: <div class="code2">3px</div> <div class="code3">solid</div> <div class="code1">black</div>;
+    <div class="code4">width</div>: <div class="code2">100px</div>;
+    <div class="code4">color</div>: <div class="code1">pink</div>;
+    <div class="code4">background-color</div>: <div class="code1">white</div>;
+}
+
+<div class="code1">nav ul li a</div>:hover {
+    <div class="code4">color</div>: <div class="code1">white</div>;
+    <div class="code4">background-color</div>: <div class="code1">pink</div>;
+}              
+</div> 
+                <div class="html-chapter-content"><br /> <br /><br />  Efekt:</div>
+                <div class="menu-chapter-content">          
+                        <br /> <br />
+                                        
+                        <div id="menu-pio">
+                            <ul>
+                                <li><a href="index.html">Strona główna</a></li>
+                                <li><a href="html5.html">HTML5</a></li>
+                                <li><a href="slowniczek.html">Słowniczek</a></li>
+                            </ul>
+                        </div>
+                </div>
+                
+                
+                
+             <br /> <br /><br /> <br />   
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

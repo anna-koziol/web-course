@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                
+                <div class="html-chapter">Kaskadowość arkuszy stylów</div>
+                <div class="html-chapter-content">Im styl jest bliżej miejsca w dokumencie, którego dotyczy, tym jest ważniejszy w hierarchi stylów</div>
+                
+                <div class="html-chapter">Hierarchia:</div>
+                <div class="html-chapter-content">
+                    <ol>
+                        <li>Styl lokalny</li>
+                        <li>Rozciągniecie stylu <div class="code3">&lt;span></div></li>
+                        <li>Wydzielone bloki <div class="code3">&lt;div></div></li>
+                        <li>Wewnetrzny arkusz stylów</li>
+                        <li>Zewnetrzny arkusz stylów</li>
+                        <li>Import arkusza stylów</li>
+                        <li>Domyślne ustawiania przeglądarki</li>
+                    </ol>
+                </div>
+                
+                <div class="html-chapter">Nowe właściwości </div>
+                <div class="html-chapter-content">Poznaj kilka nowych podstawowych właściwości, służacych do ozdabiania tekstu:
+                    <ul>
+                        <li>Wyrównanie tekstu text-align<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        1. <div class="code4">text-align</div>: <div class="code3">left</div>;
+        2. <div class="code4">text-align</div>: <div class="code3">center</div>;
+        3. <div class="code4">text-align</div>: <div class="code3">right</div>;
+        4. <div class="code4">text-align</div>: <div class="code3">justify</div>;
+        5. <div class="code4">text-align</div>: <div class="code3">initial</div>;
+        6. <div class="code4">text-align</div>: <div class="code3">inherit</div>;
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                           <br/><br/> Efekt:<br/><br/>
+                            <div class="text-align1">Przykład nr 1 - left Przykład nr 1 - left</div><br/>
+                            <div class="text-align2">Przykład nr 2 - center Przykład nr 2 - center</div><br/>
+                            <div class="text-align3">Przykład nr 3 - right Przykład nr 3 - right</div><br/>
+                            <div class="text-align4">Przykład nr 4 - justify Przykład nr 4 - justify </div><br/>
+                            <div class="text-align5">Przykład nr 5 - initial Przykład nr 5 - initial</div><br/>
+                            <div class="text-align6">Przykład nr 6 - inherit Przykład nr 6 - inherit</div><br/>
+                        </li>
+                        
+                        <li>Dekoracja tekstu text-decoration<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        1. <div class="code4">text-decoration</div>: <div class="code3">none</div>;
+        2. <div class="code4">text-decoration</div>: <div class="code3">underline</div>;
+        3. <div class="code4">text-decoration</div>: <div class="code3">overline</div>;
+        4. <div class="code4">text-decoration</div>: <div class="code3">line-through</div>;
+        5. <div class="code4">text-decoration</div>: <div class="code3">blink</div>;
+        6. <div class="code4">text-decoration</div>: <div class="code3">inherit</div>;
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                           <br/><br/> Efekt:<br/><br/>
+                            <div class="text-align1">Przykład nr 1 - none </div><br/>
+                            <div class="text-align2">Przykład nr 2 - underline</div><br/>
+                            <div class="text-align3">Przykład nr 3 - overline</div><br/>
+                            <div class="text-align4">Przykład nr 4 - line-through</div><br/>
+                            <div class="text-align5">Przykład nr 5 - blink</div><br/>
+                            <div class="text-align6">Przykład nr 6 - inherit</div><br/>                
+                        </li>
+                        
+                        <li>Przekreślenie<br/><br/>
+                        <div class="code"> <div class="code1">&lt;del> </div> tekst <div class="code1"> &lt;/del> </div> </div>
+                           <br/><br/> Efekt:<br/><br/>
+                            <del>Przykład</del> <br/><br/><br/>
+                        </li>
+                        
+                        
+                        <li>Rodzina czcionki font-family<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        <div class="code4">font-family</div>: Verdana,<div class="code3"> serif</div>;
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                           <br/><br/> Efekt:<br/><br/>
+                            <div class="text-align1a">Przykład </div><br/>             
+                        </li>
+                        
+                        <li>Rozmiar czcionki font-size<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        <div class="code4">font-size</div>: <div class="code2"> 50px</div>;
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                           <br/><br/> Efekt:<br/><br/>
+                            <div class="text-align2a">Przykład </div><br/>             
+                        </li>
+                        
+                        <li>Grubość tekstu font-weight<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        1. <div class="code4">font-weight</div>: <div class="code3">100</div>;
+        2. <div class="code4">font-weight</div>: <div class="code3">200</div>;
+        3. <div class="code4">font-weight</div>: <div class="code3">300</div>;
+        4. <div class="code4">font-weight</div>: <div class="code3">400</div>;
+        5. <div class="code4">font-weight</div>: <div class="code3">500</div>;
+        6. <div class="code4">font-weight</div>: <div class="code3">600</div>;
+        7. <div class="code4">font-weight</div>: <div class="code3">700</div>;
+        8. <div class="code4">font-weight</div>: <div class="code3">800</div>;
+        9. <div class="code4">font-weight</div>: <div class="code3">900</div>;
+        10. <div class="code4">font-weight</div>: <div class="code3">bold</div>;
+        11. <div class="code4">font-weight</div>: <div class="code3">bolder</div>;
+        12. <div class="code4">font-weight</div>: <div class="code3">inherit</div>;
+        13. <div class="code4">font-weight</div>: <div class="code3">lighter</div>;
+        14. <div class="code4">font-weight</div>: <div class="code3">normal</div>;                          
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                           <br/><br/> Efekt:<br/><br/>
+                            <div class="text-align1aa">Przykład nr 1 - 100 </div><br/>
+                            <div class="text-align2aa">Przykład nr 2 - 300</div><br/>  
+                            <div class="text-align3aa">Przykład nr 3 - 500</div><br/>
+                            <div class="text-align4aa">Przykład nr 4 - 800</div><br/>
+                            <div class="text-align5aa">Przykład nr 5 - lighter</div><br/>
+                            <div class="text-align6aa">Przykład nr 6 - bolder</div><br/>              
+                        </li>
+                        
+                        <li>Styl czcionki font-style<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        1. <div class="code4">font-style</div>: <div class="code3">italic</div>;
+        2. <div class="code4">font-style</div>: <div class="code3">oblique</div>;
+        3. <div class="code4">font-style</div>: <div class="code3">normal</div>;
+        4. <div class="code4">font-style</div>: <div class="code3">initial</div>;
+        5. <div class="code4">font-style</div>: <div class="code3">inherit</div>;                       
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                           <br/><br/> Efekt:<br/><br/>
+                            <div class="text-align2aa1">Przykład nr 1 - italic </div><br/>
+                            <div class="text-align2aa2">Przykład nr 2 - oblique</div><br/>  
+                            <div class="text-align2aa3">Przykład nr 3 - normal</div><br/>
+                            <div class="text-align2aa4">Przykład nr 4 - initial</div><br/>
+                            <div class="text-align2aa5">Przykład nr 5 - inherit</div><br/>              
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="html-chapter">Jednostki</div>
+                <div class="html-chapter-content">
+                    <ul>
+                        <li>bezwzględne:  cm, mm, px</li>
+                        <li>względne:  %, em, vh, vw</li>
+                    </ul>
+                </div>
+                
+                <div class="html-chapter">Selektor grupowy</div><br/>
+                <div class="code"><div class="code1">h1, h2, h3 </div> {
+                <div class="code4">color</div>: <div class="code1">red</div>;
+                    }</div>
+                <br/><br/><br/>
+            </div>
+            
+            <div class="come-back"><a href="css3.html"><img src="back.png" alt="back" />Powróć do menu głównego CSS</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

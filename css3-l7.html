@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Gradient</div>
+                <div class="html-chapter-content">Jest to płynne przejście z jednego koloru w inny. W CSSie są tworzone na bieżąco przez przeglądarkę.
+                <br><br>
+                Aby były odpowiednio interpretowane przez przeglądarkę poleca sie użyć przedrostków: 
+                <ul>
+                    <li>-webkit (chrome, safari)</li>
+                    <li>-o (opera)</li>
+                    <li>-moz (mozilla)</li>
+                    <li>-ms (edge)</li>
+                </ul>             
+                </div>
+                
+
+                
+                <div class="html-chapter">Jak dodajemy gradienty?</div>
+                <div class="html-chapter-content">
+                       <br/><br/>
+<div class="code"> <div class="code1">#div</div> {
+    <div class="code4">background</div>: <div class="code3">linear-gradient</div> (<div class="code2">45deg,</div><div class="code1">black, red</div>);
+    }
+</div>
+                <br/><br/>
+                Wartość <div class="code2">45deg</div> to stopnie, pod jakimi zaczyna się gradient i pod jakim kątem przebiega. <br><br>
+                
+                <div class="code"> <div class="code1">#div</div> {
+    <div class="code4">background</div>: <div class="code3">linear-gradient</div> (<div class="code2">45deg,</div><div class="code1">black  90%, red</div>);
+    }
+</div>
+           <br/><br/>
+                Wartość <div class="code1">90%</div> odnosi się do koloru czarnego i informuje przeglądarkę, że ten kolor  ma zostać osiągnięty w odległości 90% od jego górnej krawędzi. <br><br>
+                
+                <div class="code"> <div class="code1">#div</div> {
+    <div class="code4">background</div>: <div class="code3">radial-gradient</div> (<div class="code2">circle,</div><div class="code1">black, red</div>);
+    }
+</div>
+           <br/><br/>
+                Graient może również rozchodzić się od okęgu, a nie od prostej linii.<br><br>
+            </div>
+            
+
+                <div class="html-chapter">Flagi</div>
+                <div class="html-chapter-content">Łatwym zadaniem na poćwiczenie robienia flag, początkowo tworzymy pustego diva o  ustalonej szerokości i wyskości. Potem gradientami formatujemy jego tło tak, aby przypominał oryginalną flagę.
+                <br><br>
+                            <div id="fr">.</div> <br />
+                            <div id="ger">.</div> <br />
+                            <div id="est">.</div> <br />
+                            <div id="ir">.</div> <br />
+                            <div id="jp">.</div>            
+                </div>
+                
+                
+                <div class="html-chapter">Podpowiedź</div>
+                <div class="html-chapter-content">Przeanalizuj przykładowy kod na falgę Estonii, aby później samodzielnie odtworzyć pozostałe flagi:
+                <br><br>
+<div class="code"> <div class="code1">#est</div> {
+    <div class="code4">height</div>: <div class="code2">10em</div>;
+    <div class="code4">width</div>: <div class="code2">15em</div>;
+    <div class="code4">background</div>: <div class="code3">linear-gradient</div>(
+        <div class="code2">to right</div>,
+            <div class="code1">white</div> <div class="code2">33.33%,</div>, <div class="code1">black</div> <div class="code2">33.33%,</div>,
+            <div class="code1">black</div> <div class="code2">66.66%,</div>, <div class="code1">#4169E1</div> <div class="code2">66.66%,</div>,
+    );
+    }
+</div>            
+                </div>
+            <br><br><br> 
+            </div>
+            
+            <div class="come-back"><a href="css3.html"><img src="back.png" alt="back" />Powróć do menu głównego CSS</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Listy</div>
+                <div class="html-chapter-content">Listy w HTMLu to pogrupowane treści, zazwyczaj wypunktowane informacje. Można  tworzyć listy numorowane (kolejne elemnty mają oznaczenia liczbowe: 1,2,3)  lub nienumerowane (kolejne elemnty mają oznaczenia znakowe: &#9744;, &#8226;, &hearts;)</div>
+                
+                <div class="html-chapter">Jak wygląda robienie listy  nieliczbowej?</div>
+                <div class="html-chapter-content">Znacznik &lt;ul> tworzy ramy listy, a &lt;li> podpunkty listy. </div>
+                <div class="code"> <div class="code1">&lt;ul> 
+                &lt;li></div>Opcja 1<div class="code1">&lt;/li>
+                &lt;li></div>Opcja 2<div class="code1">&lt;/li>
+                &lt;li></div>Opcja 3<div class="code1">&lt;/li>
+&lt;/ul></div>   </div><br/>
+                <div class="html-chapter-content">Efekt na stronie: <br/>
+                    <div class="code2">
+                 <ul> 
+                    <li>Opcja 1</li>
+                    <li>Opcja 2</li>
+                    <li>Opcja 3</li>
+                </ul>
+                    </div>
+                </div>
+                
+                <div class="html-chapter">Jak wygląda robienie listy  liczbowej?</div>
+                <div class="html-chapter-content">Znacznik &lt;ol> tworzy ramy listy, a &lt;li> podpunkty listy. </div>
+                <div class="code"> <div class="code1">&lt;ol> 
+                &lt;li></div>Opcja 1<div class="code1">&lt;/li>
+                &lt;li></div>Opcja 2<div class="code1">&lt;/li>
+                &lt;li></div>Opcja 3<div class="code1">&lt;/li>
+&lt;/ol></div>   </div><br/>
+                <div class="html-chapter-content">Efekt na stronie: <br/>
+                    <div class="code2">
+                 <ol> 
+                    <li>Opcja 1</li>
+                    <li>Opcja 2</li>
+                    <li>Opcja 3</li>
+                </ol>
+                    </div>
+                </div>
+                
+                
+                <div class="html-chapter">Czas na listę definicji...</div>
+                <div class="html-chapter-content">Czasami chcemy stworzyć listę, zawierajacą definicję danego zagadnienia, w HTML5 służą do tego odpowednie  znaczniki, dzięki czemu tekst jest odpowednio formatowany. Znacznik &lt;dl> tworzy ramy listy, &lt;dt> musi zawierać słowo definiowane a &lt;dd> opis, fefinicję </div>
+                <div class="code"><div class="code1"> &lt;dl> 
+                &lt;dt></div>Piesek<div class="code1">&lt;/dt>
+                    &lt;dd></div>mały pies<div class="code1">&lt;/dd>
+                    &lt;dt></div>Kotek<div class="code1">&lt;/dt>
+                    &lt;dd></div>mały kot<div class="code1">&lt;/dd>
+&lt;/dl> </div>  </div><br/>
+                <div class="html-chapter-content">Efekt na stronie: <br/>
+                    <div class="code2">
+                <dl> 
+                <dt>Piesek</dt>
+                    <dd>mały pies</dd>
+                <dt>Kotek</dt>
+                    <dd>mały kot</dd>
+                </dl>
+                    </div>
+                </div>
+                
+                
+                <div class="html-chapter">Listy zagnieżdżone</div>
+                <div class="html-chapter-content">Listy w listach, w liście zagnieżdżonej trzeba dbać o znaczniki, podczas zagnieżdżania można połączyć różne listy.</div>
+                <div class="code"> <div class="code1">&lt;ol>
+        &lt;li></div>Produkty mleczne
+                <div class="code1">&lt;ul>
+                    &lt;li></div>mleko 3,2<div class="code1">&lt;/li>
+                    &lt;li></div>jogurt malinowy<div class="code1">&lt;/li>
+                    &lt;li></div>śmietanka do kawy<div class="code1">&lt;/li>
+                &lt;/ul>
+        &lt;/li>
+        &lt;li></div>Owoce
+                <div class="code1">&lt;ul> 
+                    &lt;li></div>jabłka<div class="code1">&lt;/li>
+                    &lt;li></div>cytusy
+                                <div class="code1">&lt;ul>
+                                    &lt;li></div>pomarańcze<div class="code1">&lt;/li>
+                                    &lt;li></div>mandarynki<div class="code1">&lt;/li>
+                                &lt;/ul>
+                    &lt;/li>
+                    &lt;li></div>brzoskiwnie<div class="code1">&lt;/li>
+                &lt;/ul>
+        &lt;/li>
+        &lt;li></div>Pieczywo<div class="code1">
+                &lt;ul>
+                    &lt;li></div>chleb<div class="code1">&lt;/li>
+                    &lt;li></div>bułki<div class="code1">&lt;/li>
+                    &lt;li></div>rogaliki<div class="code1">&lt;/li>	
+                &lt;/ul>
+        &lt;/li>
+ &lt;/ol></div> </div><br/>
+                <div class="html-chapter-content">Efekt na stronie: <br/>
+                    <div class="code2">
+                        <ol>
+                                <li>Produkty mleczne
+                                    <ul>
+                                        <li>mleko 3,2</li>
+                                        <li>jogurt malinowy</li>
+                                        <li>śmietanka do kawy</li>
+                                    </ul>
+                                </li>
+                                <li>Owoce
+                                    <ul> 
+                                        <li>jabłka</li>
+                                        <li>cytusy
+                                            <ul>
+                                                <li>pomarańcze</li>
+                                                <li>mandarynki</li>
+                                            </ul>
+                                        </li>
+                                        <li>brzoskiwnie</li>
+                                    </ul>
+
+                                </li>
+                                <li>Pieczywo
+                                    <ul>
+                                        <li>chleb</li>
+                                        <li>bułki</li>
+                                        <li>rogaliki</li>	
+                                    </ul>
+                                </li>
+                            </ol>
+                    </div>
+                </div>
+                
+                <div class="html-chapter">Jak umieścić obrazek na  stronie?</div>
+                <div class="html-chapter-content">Do dodawanie obrazów na stronę służy znacznik pojedynczy &lt;img />. Obowiązkowymi atrybutami jest src, czyli źródło, ścieżka obrazka oraz alt, czyli opis, który wyświetli się  w razie nieodnalezienia pliku graficznego.
+                <br/><br/><br/>
+                <div class="code"> <div class="code1">&lt;img</div>
+                    <div class="code2">src</div>=<div class="code3">"adres"</div><div class="code2">   alt</div>=<div class="code3">"opis"</div>
+  <div class="code1">/></div>
+                </div><br/><br/>
+                    Efekt: <img src="slajder6.jpg" alt="#"/>
+                </div>
+                
+                
+                <div class="html-chapter">Hiperłącza</div>
+                <div class="html-chapter-content">Hierłącze może dotyczyć: dokumentu HTML, txt, obrazeka, adresu URL, adresu FTP, adresu maila, grup dyskusyjnych.<br/><br/><br/><br/><br/><br/>
+                    <h5>Czas na napisanie strony!</h5>
+                </div>
+                
+<div class="code">
+&lt;!DOCTYPE HTML>
+    <div class="code1">&lt;html</div> <div class="code2">lang</div>=<div class="code3">"pl"</div><div class="code1"> >
+&lt;head>
+    &lt;meta</div> <div class="code2">charset</div>=<div class="code3">"utf-8"</div><div class="code1">  />
+    &lt;title></div> Systemy to świetna zabawa!<div class="code1">&lt;/title>
+    &lt;meta</div> <div class="code2">name</div>=<div class="code3">"description"</div> <div class="code2">contenet</div>=<div class="code3">"Największy zbiór informacji
+    dotyczących systemów operacyjnych."</div><div class="code1"> />
+    &lt;meta</div><div class="code2"> name</div>=<div class="code3">"keywords"</div> <div class="code2">content</div>=<div class="code3">"systemy, systemy operacyjne"</div><div class="code1">  />
+    &lt;meta</div> <div class="code2">http-eqiuv</div>=<div class="code3">"X-UA-Compatible"</div> <div class="code2">content</div>=<div class="code3">"IE=edge,chrome=1"</div> <div class="code1"> />
+&lt;/head>
+&lt;body> 
+    &lt;h4></div> Systemy to świetna zabawa!<div class="code1"> &lt;/h4></div>
+	
+	Na tej  stronie będą początkowo umawiane poszczególne  systemy: 
+    <div class="code1">&lt;br /> &lt;a</div> <div class="code2">href</div>=<div class="code3">"https://www.microsoft.com/pl-pl/windows/"</div> <div class="code2">target</div>=<div class="code3">"_blank"
+    </div> <div class="code2">title</div>=<div class="code3">"Przejdź na główną stronę Microsoftu"</div><div class="code1">> </div>* windows 7<div class="code1">&lt;/a>
+	&lt;br /> &lt;br />
+    &lt;img</div> <div class="code2">src</div>=<div class="code3">"img/windows7.jpg"</div> <div class="code2">width</div>=<div class="code3">"100"</div> <div class="code2">height</div>=<div class="code3">"100"</div><div class="code1"> />
+	
+    &lt;br /> &lt;a</div> <div class="code2">href</div>=<div class="code3">"http://www.linuxmint.com/"</div>  <div class="code2">target</div>=<div class="code3">"_blank"</div> <div class="code2">title</div>=<div class="code3">"Przejdź 
+    na główną stronę Mint'a"</div> <div class="code1">></div> * linux mint <div class="code1">&lt;/a> 
+	&lt;br />  &lt;br />
+    &lt;img</div> <div class="code2">src</div>=<div class="code3">"img/linux mint.jpg"</div> <div class="code2">width</div>=<div class="code3">"100"</div> <div class="code2">height</div>=<div class="code3">"100"</div> <div class="code1">/>
+	
+&lt;/body>
+&lt;/html></div>
+    
+</div>         <br/>  <br/>   
+                
+              <div class="effect">Efekt: <br/>  <br/>
+                
+                <span id="effect2"><h4> Systemy to świetna zabawa! </h4>
+
+                    Na tej  stronie będą początkowo umawiane poszczególne  systemy: 
+                    <br /> <a href="https://www.microsoft.com/pl-pl/windows/" target="_blank" title="Przejdź na główną stronę Microsoftu"> * windows 7</a>
+                    <br /> <br />
+                    <img src="img/windows7.jpg"  width="100" height="100" />
+
+                    <br /> <a href="http://www.linuxmint.com/"  target="_blank" title="Przejdź na główną stronę Mint'a"> * linux mint </a> 
+                    <br />  <br />
+                    <img src="img/linux mint.jpg" width="100" height="100"/>
+                </span><br />  <br />
+                </div>
+
+         
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

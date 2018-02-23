@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Czym jest HTML?</div>
+                <div class="html-chapter-content">HTML (ang. HyperText Markup Language) – hipertekstowy język znaczników, wykorzystywany do tworzenia dokumentów hipertekstowych.
+                Pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając znaczenie poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np. interaktywne formularze danych.</div>
+                
+                <div class="html-chapter">Znaczniki</div>
+                <div class="html-chapter-content">instrukcja formatująca, informuje przeglądarkę jak ma przekształcić tekst w stronę WWW. Jeśli z dokumentu html usuniemy znaczniki i doctype to zostanie sam tekst. <br /><br/> <i><a href="slowniczek.html">Przeczytaj więcej o innych pojęciach związanych z HTML oraz CSS w słowniczku</a></i></div>
+            
+                <div class="html-chapter-content">Wyróżniamy dwa rodzaje zanczników:
+                    <ul> 
+                        <li>Kontenerowe: <div class="code3"> &lt;znacznik> &lt;/znacznik></div></li>
+                        <li>Pojedyncze: <div class="code3"> &lt;znacznik/></div></li>
+                    </ul>             
+                </div>
+                
+                <div class="html-chapter">Budowa pustego dokumentu:</div>
+                <div class="html-chapter-content">Każdy dokument html składa sie z 3 podstawowych bloków: html, head, body.
+                <br/>
+                Znaczniki &lt;body>...&lt;/body> określa pewne informacje na temat strony jako całości. Stanowi ono właściwą treść, czyli tzw. ciało, w którym zawierają się wszystkie inne znaczniki, dotyczące formatowania, a także zwykły tekst. W jednym dokumencie może się znajdować tylko jeden znacznik &lt;body> - zaraz po nagłówku strony &lt;head>...&lt;/head>.<br/><br/>
+<div class="code"><div class="code1">&lt;html>
+     &lt;head>&lt;/head>
+     &lt;body>&lt;/body>
+ &lt;/html></div></div>          
+                <div id="rules">
+                <div class="html-chapter">Zasady pracy z językiem:</div>
+                    <div class="html-chapter-content">
+                        <ul>
+                        <li>nie zagnieżdżaj znaczników - jako pierwszy zamknij najnowszy znacznik</li>
+                        <li>zawsze zamykaj znaczniki, aby uniknąć błędów w późniejszych etapach</li>
+                        <li>zapisuj nazwy znaczników i atrybutów zawsze z małej litery</li>
+                        <li>używaj cudzysłowów dla wszystkich atrybutów (np. "UTF-8")</li>
+                        <li>uważaj ze znakami specjalnymi - lepiej użyć encji</li>
+                        </ul>
+                    </div>
+                    
+                     <div class="html-chapter">Czym są encje?</div>
+                    <div class="html-chapter-content">Znaki specjalne HTML (inne nazwy które można spotkać to Encje HTML lub Odwołania znakowe SGML) są używane najczęściej do reprezentacji znaków które mają specjalne znaczenie dla języka HTML (tzn. &amp;, &lt;, >, " i '). Poza tym są one często używane aby wstawić do dokumentu HTML znaki których normalnie nie można użyć (ponieważ używany zestaw znaków, np. ISO-8859-2, na to nie pozwala), lub też dany znak jest trudny do wpisania (tzn. nie ma go na klawiaturze).<br/><br/>
+                    Przykłady: <br/> <br/>
+                        <div class="code"> &lt; &rarr; <div class="code3">&amp;lt;</div><br/>
+ &dagger; &rarr; <div class="code3">&amp;dagger;</div><br/>
+ &euro; &rarr; <div class="code3">&amp;euro;</div><br/>
+ &hearts; &rarr; <div class="code3">&amp;hearts;</div><br/>
+ &radic; &rarr; <div class="code3">&amp;radic;</div><br/>
+ &#8710; &rarr; <div class="code3">&amp;#8710;</div><br/>
+ &#21328; &rarr; <div class="code3">&amp;#21328;</div><br/></div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

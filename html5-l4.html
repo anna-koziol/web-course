@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                
+                <div class="html-chapter">Tabele</div>
+                <div class="html-chapter-content">Bardzo wiele danych wygodnie jest prezentować w formie tabelarycznej, np. różnego rodzaju zestawienia. Z tego powodu w języku HTML wprowadzono zestaw znaczników pozwalających na tworzenie tabel. Jak się okazało później, te znaczniki pozwoliły także na precyzyjne rozmieszczenie poszczególnych elementów na stronie, przez co możliwe stało się tworzenie stron których szata graficzna wykraczała poza to co oferowały pozostałe znaczniki <br /><br/></div>
+
+                
+                <div class="html-chapter">Lista znaczników dotyczących tabeli:</div>
+                <div class="html-chapter-content">
+                    <ul>
+                        <li>table &rarr; ramy tabeli</li>
+                        <li>tr &rarr;  wiersz tabeli</li>
+                        <li>td, th &rarr; komórka, komórka nagłówka</li>
+                        <li>caption &rarr; podpis tabeli</li>
+                        <li>col &rarr; kolumna i grupa kolumn</li>
+                        <li>thread, tfoot, tbody &rarr; nagłówek, stopka, treść tabeli</li>
+                    </ul>
+                    <br/><br/>         
+                </div>
+                
+                
+            <div class="html-chapter">Wewnątrz komórek td może być:</div>
+                <div class="html-chapter-content">
+                    <ul>
+                        <li>tekst</li>
+                        <li>elementy wstawione</li>
+                        <li>elemnety blokowe, np. p, table</li>
+                    </ul>
+            </div>
+                
+            <div class="html-chapter">Scalanie komórek</div>
+                <div class="html-chapter-content">
+                            <div class="code">
+                            <div class="code1">&lt;table</div> <div class="code2">border</div>=<div class="code3">"1"</div><div class="code1">> &lt;/table>
+                            &lt;td </div><div class="code2">colspan</div>=<div class="code3">"2"</div> <div class="code1">> </div>Razem<div class="code1">&lt;/td>
+                            &lt;td </div><div class="code2">colspan</div>=<div class="code3">"2"</div> <div class="code1">> </div>Razem<div class="code1">&lt;/td></div>
+                                
+                            </div>          
+                </div> 
+                
+                                
+            <div class="html-chapter">Przykład prostej tabel - spróbuj ją napisać  lub wymyślić własną</div>
+                <div class="html-chapter-content">
+                            <div class="code">
+            <div class="code1">&lt;table</div> <div class="code2">border</div>=<div class="code3">"1"</div><div class="code1">></div>
+                    <div class="code1">&lt;tr>
+                            &lt;td></div>lp<div class="code1">&lt;/td>
+                            &lt;td></div>litera<div class="code1">&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                            &lt;td></div>1<div class="code1">&lt;/td>
+                            &lt;td></div>a<div class="code1">&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                            &lt;td></div>2<div class="code1">&lt;/td>
+                            &lt;td></div>b<div class="code1">&lt;/td>
+                    &lt;/tr>
+            &lt;/table></div>
+                            </div> 
+                    
+                    <br/><br/><br/>Efekt: <br/><br/><br/>
+                    <table border="1">
+                    <tr>
+                        <td>lp</td>
+                        <td>litera</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>b</td>
+                    </tr>
+
+                </table><br/><br/><br/>
+                    
+<div class="html-chapter">Przykład tabeli scalonej</div>
+                    <div class="html-chapter-content">
+                    <div class="code">
+            <div class="code1">&lt;table</div> <div class="code2">border</div>=<div class="code3">"1"</div><div class="code1">></div>
+                    <div class="code1">&lt;tr>
+                        &lt;td></div>lp<div class="code1">&lt;table</div> <div class="code2">border</div>=<div class="code3">"1"</div><div class="code1"> >
+                    &lt;tr>
+                    &lt;/tr>
+                        &lt;th></div>lp.<div class="code1">&lt;/th>
+                        &lt;th></div>Państwo<div class="code1">&lt;/th>
+                        &lt;th></div>Stolica<div class="code1">&lt;/th>
+                    &lt;tr>
+                        &lt;td></div>1.<div class="code1">&lt;/td>
+                        &lt;td</div> <div class="code2">rowspan</div>=<div class="code3">"2"</div><div class="code1"> ></div>NRD<div class="code1">&lt;/td>
+                        &lt;td></div>Berlin<div class="code1">&lt;/td>
+                    &lt;/tr>
+                        &lt;td></div>2.<div class="code1">&lt;/td>
+                        &lt;td></div>Bonn<div class="code1">&lt;/td>
+                    &lt;tr>
+                        &lt;td></div>3.<div class="code1">&lt;/td>
+                        &lt;td</div> <div class="code2">colspan</div>=<div class="code3">"2"</div><div class="code1">  ></div>Luksemburg<div class="code1">&lt;/td>	
+                    &lt;/tr>
+            &lt;/table></div>
+                        </div> </div>
+                    
+                    <br/><br/><br/>Efekt: <br/><br/><br/>
+                    
+                    <table border="1">
+                        <tr>
+
+                        </tr>
+                            <th>lp.</th>
+                            <th>Państwo</th>
+                            <th>Stolica</th>
+                        <tr>
+                            <td>1.</td>
+                            <td rowspan="2">NRD</td>
+                            <td>Berlin</td>
+                        </tr>
+                            <td>2.</td>
+
+                            <td>Bonn</td>
+                        <tr>
+                            <td>3.</td>
+                            <td colspan="2">Luksemburg</td>	
+                        </tr>
+                    </table><br/><br/><br/>
+                    
+                    
+                    
+                    
+                    <div class="html-chapter">Przykład tabeli scalonej - zaawansowana wersja</div>
+                    <div class="html-chapter-content">
+                    <div class="code">
+            <div class="code1">&lt;table</div> <div class="code2">border</div>=<div class="code3">"1"</div><div class="code1">>
+                        &lt;tr>
+                            &lt;td</div> <div class="code2">colspan</div>=<div class="code3">"2"</div><div class="code1">> </div>1-1<div class="code1">&lt;/td>
+                            &lt;td></div> 1-3<div class="code1">&lt;/td>
+                        &lt;/tr>
+
+                        &lt;tr>
+                        &lt;td></div>2-1<div class="code1">&lt;/td>
+                        &lt;td</div> <div class="code2">colspan</div>=<div class="code3">"2"</div> <div class="code2">rowspan</div> =<div class="code3">"2"</div><div class="code1"> >
+                        &lt;table</div> <div class="code2">border</div>=<div class="code2">"1"</div><div class="code1"> >
+                                    &lt;tr>
+                                        &lt;th></div>lp.<div class="code1">&lt;/th>
+                                        &lt;th></div>Państwo<div class="code1">&lt;/th>
+                                        &lt;th></div>Stolica<div class="code1">&lt;/th>
+                                    &lt;/tr>
+
+                                    &lt;tr>
+                                        &lt;td></div>1.<div class="code1">&lt;/td>
+                                        &lt;td</div> <div class="code2">rowspan</div>=<div class="code3">"2"</div> <div class="code1">> </div>NRD<div class="code1">&lt;/td>
+                                        &lt;td></div>Berlin<div class="code1">&lt;/td>
+                                    &lt;/tr>
+
+                                    &lt;tr>
+                                        &lt;td></div>2.<div class="code1">&lt;/td>
+                                        &lt;td></div>Bonn<div class="code1">&lt;/td>
+                                    &lt;/tr>
+
+                                    &lt;tr>
+                                        &lt;td></div>3.<div class="code1">&lt;/td>
+                                        &lt;td</div> <div class="code2">colspan</div>=<div class="code3">"2"</div><div class="code1">  > </div>Luksemburg<div class="code1">&lt;/td>	
+                                    &lt;/tr>
+                        &lt;/table>
+
+                            &lt;/td>
+                        &lt;/tr>
+
+                        &lt;tr>
+                            &lt;td></div>3-1<div class="code1">&lt;/td>
+                        &lt;/tr>
+
+                        &lt;tr>
+                            &lt;td></div>4-1<div class="code1">&lt;/td>
+                            &lt;td></div>4-2<div class="code1">&lt;/td>
+                            &lt;td></div>4-3<div class="code1">&lt;/td>
+                        &lt;/tr>
+            &lt;/table></div>
+            </div>
+                        </div> </div>
+                    
+                <br/><br/><br/><div class="effect">Efekt: <br/><br/><br/>
+                    
+                        <table border="1">
+                                    <tr>
+                                        <td colspan="2">1-1</td>
+                                        <td>1-3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2-1</td>
+                                        <td colspan="2" rowspan ="2">
+                                            <table border="1">
+                                                <tr>
+                                                    <th>lp.</th>
+                                                    <th>Państwo</th>
+                                                    <th>Stolica</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td rowspan="2">NRD</td>
+                                                    <td>Berlin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2.</td>
+                                                    <td>Bonn</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td colspan="2">Luksemburg</td>	
+                                                </tr>
+                                            </table>	
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4-1</td>
+                                        <td>4-2</td>
+                                        <td>4-3</td>
+                                    </tr>	
+                                </table><br/><br/><br/>
+                    </div>
+                    
+                    
+                    
+                </div> 
+                                
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

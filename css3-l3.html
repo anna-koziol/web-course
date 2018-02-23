@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                
+                <div class="html-chapter">Model pudełkowy</div>
+                <div class="html-chapter-content">Każdy element tworzy w dokumencie prostokątny obszar zwany pudełkiem lub containerem <br> <br>
+                <img src="model.jpg" alt="model"><br> <br>
+                   
+                   Pudełko zbudowane jest z:
+                    <ol>
+                        <li>Zawartości - "Content" (np. test, obrazek itd.)</li>
+                        <li>Otaczających marginesów wewnętrznych - "Padding"</li>
+                        <li>Obramowania - "Border"</li>
+                        <li>Marginesów - "Margin"</li>
+                    </ol>
+                </div>
+                
+
+                
+                <div class="html-chapter">Czas na  nowe właściwości CSS! </div>
+                <div class="html-chapter-content">Poznaj kilka nowych właściwości, które jeszcze bardziej pomogą Ci w urozmaiceniu Twojej  strony:
+                    <ul>
+                        <li>Ramki<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        <div class="code4">border</div>: <div class="code2">3px</div> <div class="code3">solid</div> <div class="code3">green</div>;
+        
+        lub  można definiować dla poszczególnych krawędzi
+        <div class="code4">border-top</div>: <div class="code2">3px</div> <div class="code3">solid</div><div class="code1">green</div>;
+        <div class="code4">border-right</div>: <div class="code2">5px</div> <div class="code3">solid</div> <div class="code1">pink</div>;
+        <div class="code4">border-bottom</div>: <div class="code2">1px</div> <div class="code3">dashed</div> <div class="code1">yellow</div>;
+        <div class="code4">border-left</div>: <div class="code2">8px</div> <div class="code3">dotted</div> <div class="code1">blue</div>;
+        
+        można też definiować pojedyńcze właściwości 
+        <div class="code4">border-width</div>: <div class="code2">3px</div>;
+        <div class="code4">border-style</div>: <div class="code3">solid</div>;
+        <div class="code4">border-color</div>: <div class="code1">yellow</div>;  
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                        </li>
+                        
+                        <br><br><li>Obraz na tle strony<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        <div class="code4">background-image</div>: <div class="code3">url('obraz.jpg')</div>;
+        <div class="code4">background-repeat</div>: <div class="code3">no-repeat, repeat-x, repeat-y</div>;
+        <div class="code4">background-position</div>: <div class="code3">left, right, center, top, bottom</div>;
+        <div class="code4">background-attachment</div>: <div class="code3">fixed, scroll, interit</div>;
+    }
+  <div class="code1"> &lt;/style> </div> </div>
+                           <br/><br/>    
+                        </li>
+                        
+                        <li>Selektor identyfikatora<br/><br/>
+                        <div class="code"> <div class="code1">&lt;div></div> <div class="code2">#</div>=<div class="code3">"id"</div> <div class="code1"> &lt;/div> </div> 
+                        
+Isteniją też gotowe znaczniki blokowe, które powinny się znaleźć na stronie:
+
+<div class="code1">&lt;header></div> nagłówek
+<div class="code1">&lt;footer></div> stopka
+                        </div>
+
+                        </li>
+   
+                        
+                        <li>Akapit<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        <div class="code4">text-indent</div>: <div class="code2">30px</div>;                       
+    }
+  <div class="code1"> &lt;/style> </div> </div>             
+                        </li> <br/><br/>
+                                             
+                        <li>Odstępy między literami<br/><br/>
+                        <div class="code"> <div class="code1">&lt;style> 
+    </div><div class="code1">p</div> {
+        <div class="code4">letter-spacing</div>: <div class="code2">5px</div>;                       
+    }
+  <div class="code1"> &lt;/style> </div> </div>             
+                        </li> 
+                                              
+                    </ul>
+                </div>
+
+            <br/><br/>
+            </div>
+            
+            <div class="come-back"><a href="css3.html"><img src="back.png" alt="back" />Powróć do menu głównego CSS</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

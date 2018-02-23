@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML & CSS</title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Anna Kozioł" />
+<meta name="keywords" content="HTML, CSS, strony internetowe, nauka, webdev" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header> 
+            <p>&lt;WebWord/&gt;</p>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="yt" /></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"><img src="twitter.png" alt="tw" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="fb" /></a>
+        
+        </header>
+        <div id="content">               
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="html5.html">HTML5</a></li>
+                    <li><a href="css3.html">CSS3</a></li>
+                    <li><a href="slowniczek.html">Słowniczek</a></li>
+                </ul>
+            </nav>
+            
+            <div id="html5-l1-content">
+                <div class="html-chapter">Mapa odsyłaczy</div>
+                <div class="html-chapter-content">Odnośniki nie muszą być tylko tekstowe, innym pomysłem jest utworzenie kilku odnośników, które będą umieszczone na obszarze jednego obrazka. Służy to tego mapa odnośników, czyli zanaczone na obrazku fragmenty, pola odnośników.</div>
+            
+                <div class="html-chapter-content">Do tworzenia mapy używamy znaczników:
+                    <ul> 
+                        <li><div class="code3"> &lt;map>&lt;/map></div> odpowiada za deklarację mapy, zawiera obowiązkowy atrybut <div class="code2">name</div>. Wewnątrz map znajduje się znacznik <div class="code1"><area/></div>, który definiuje obszar danego hiperłącza.<br/><br/>
+                                <ul>
+                                    Area zawiera następujące atrybuty:<br/><br/>
+                                    <li>href=" "</li><br/>
+                                    <li>coords=" " &rarr; definiuje współrzędne krańcowych punktów aktywnego obszaru</li><br/>
+                                    <li>shape=" " &rarr; określa kształt aktywnego obszaru <br/>             
+                                        <ul>
+                                            <li>circle &rarr; koło</li>
+                                            <li>rect &rarr; kwadrat</li>
+                                            <li>polygon &rarr; trójkąt</li>
+                                        </ul><br/>
+                                    </li>
+                                    <li>title=" "</li>
+                                </ul>
+                        </li>
+
+                    </ul>
+                    
+                    <div class="code">
+    <div class="code1">&lt;map</div> <div class="code2">name</div>=<div class="code3">"mapaobrazka"</div><div class="code1"> >
+        &lt;area</div> <div class="code2">href</div>=<div class="code3">"index.html"</div> <div class="code2">alt</div>=<div class="code3">"mama kaczka"</div> <div class="code2">shape</div>=<div class="code1">"rect"</div>
+        <div class="code2">coords</div>=<div class="code3">"529,195,715,315"</div><div class="code1"> />
+        
+        &lt;area</div> <div class="code2">href</div>=<div class="code3">"https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%
+        C5%82%C3%B3wna"</div> <div class="code2">alt</div>=<div class="code3">"dziecko kaczka"</div> <div class="code2">shape</div>=<div class="code3">"circle"</div> 
+        <div class="code2">coords</div>=<div class="code3">"80,148,30"</div><div class="code1"> />
+        
+        &lt;area</div> <div class="code2">href</div>=<div class="code3">"https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%
+        C5%82%C3%B3wna"</div> <div class="code2">alt</div>=<div class="code3">"woda"</div> <div class="code2">shape</div>=<div class="code3">"poly"</div> 
+        <div class="code2">coords</div>=<div class="code3">"170,58,528,58,321,195"</div> <div class="code1">/>
+    &lt;/map>
+    &lt;img</div> <div class="code2">src</div>=<div class="code3">"rys_pods.jpg"</div> <div class="code2">alt</div>=<div class="code3">"kaczki"</div> <div class="code2">usemap</div>=<div class="code3">"#mapaobrazka"</div><div class="code1">  > </div>
+                        
+                    </div> 
+                    
+                    <br/><br/><br/>Efekt: <br/>
+                    <map name="mapaobrazka">
+                        <area href="index.html" alt="mama kaczka" shape="rect" coords="529,195,715,315" />
+                        <area href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna" alt="dziecko kaczka" shape="circle" coords="80,148,30" />
+                        <area href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna" alt="woda" shape="poly" coords="170,58,528,58,321,195" />
+                    </map>
+                    <img src="rys_pods.jpg" alt="kaczki" usemap="#mapaobrazka">
+                </div>
+                
+                <div class="html-chapter">Podpisy obrazków</div>
+                <div class="html-chapter-content">Ważne, aby figure nie umieszczać w znaczniku &lt;p>. Szkielet podpisu obrazka:<br/><br/>
+<div class="code"><div class="code1">&lt;figure>
+    &lt;img</div> <div class="code2">src</div>=<div class="code3">"rys.jpg"</div> <div class="code2">alt</div>=<div class="code3">"obrazek"</div> <div class="code1">  > 
+    &lt;figcaption></div>podpis obrazka podpis obrazka podpis obrazka<div class="code1">&lt;/figcaption>
+&lt;/figure></div>
+</div>
+                    
+                    Efekt:
+                    		<figure>
+		<img src="slajder4.jpg" alt="Rysunek1" /> 
+		<figcaption>podpis obrazka podpis obrazka podpis obrazka</figcaption>
+		</figure>
+                </div>
+            </div>
+            
+            <div class="come-back"><a href="html5.html"><img src="back.png" alt="back" />Powróć do menu głównego HTML</a><img src="back2.png" alt="back" /></div>
+        <footer>
+            <div id="footer1">
+                <div id="footer1a">Zapraszamy na kursy w naszej szkole WebWord
+                <br /> <br />
+                Siedziba:<br />
+                ul. Kolorowa 18<br />
+                33-333 Kraków<br />
+                tel. +48 123 568 954<br />
+                mail: webword@gmail.pl<br />
+                </div>
+                
+                <div id="footer1b">
+                Słowniczek <br />
+                Kurs HTML5<br />
+                Kurs CSS3<br />
+                </div>
+            </div>
+            
+            <div id="footer2">Copyright © 2017 by Anna Kozioł. All rights reserved.</div>
+        
+        </footer>
+        </div>
+    </div>
+</body>
+</html>
